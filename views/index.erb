@@ -1,0 +1,7 @@
+<h3>All students:</h3>
+
+<%@counter = 1%>
+<% for student in @students%>
+  <p><%=@counter%>. <a href="/students/<%=student.id%>"><%=student.first_name.capitalize%></a></p>
+  <%@counter +=1 %>
+<%end%>
